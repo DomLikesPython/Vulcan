@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vulcan:coal_dust"
+    },
+    {
+      "item": "vulcan:coal_dust"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    }
+  ],
+  "result":
+  {
+    "item": "vulcan:carbon_enriched_iron",
+    "count": 1
+  }
+}

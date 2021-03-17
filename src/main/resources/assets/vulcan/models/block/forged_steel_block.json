@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "vulcan:blocks/forged_steel_block"
+  }
+}

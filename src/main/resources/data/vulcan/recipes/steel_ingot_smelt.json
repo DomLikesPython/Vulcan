@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "vulcan:carbon_enriched_iron"
+  },
+  "result": "vulcan:steel_ingot",
+  "experience": 1.0,
+  "cookingtime": 200
+}

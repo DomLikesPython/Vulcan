@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "X X",
+    "X X",
+    "   "
+  ],
+  "key":
+  {
+    "X":
+    {
+      "item": "vulcan:forged_steel_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "vulcan:forged_steel_boots",
+    "count": 1
+  }
+}

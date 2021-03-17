@@ -1,0 +1,26 @@
+{
+  "item.vulcan.test_item": "Test Item",
+  "item.vulcan.cake": "Cake",
+  "item.vulcan.stone_hammer": "Stone Hammer",
+  "item.vulcan.coal_dust": "Coal Dust",
+  "item.vulcan.carbon_enriched_iron": "Carbon Enriched Iron",
+  "item.vulcan.steel_ingot": "Steel Ingot",
+  "block.vulcan.steel_block": "Steel Block",
+  "item.vulcan.forged_steel_ingot": "Forged Steel Ingot",
+  "item.vulcan.forged_steel_pickaxe": "Forged Steel Pickaxe",
+  "item.vulcan.forged_steel_axe": "Forged Steel Axe",
+  "item.vulcan.forged_steel_shovel" : "Forged Steel Shovel",
+  "item.vulcan.forged_steel_sword": "Forged Steel Sword",
+  "item.vulcan.forged_steel_helmet": "Forged Steel Helmet",
+  "item.vulcan.forged_steel_chestplate": "Forged Steel Chestplate",
+  "item.vulcan.forged_steel_leggings": "Forged Steel Leggings",
+  "item.vulcan.forged_steel_boots": "Forged Steel Boots",
+  "block.vulcan.forged_steel_block": "Forged Steel Block",
+
+  "block.vulcan.forged_steel_anvil": "Forged Steel Anvil",
+  "screen.vulcan.forged_steel_anvil.name": "Forged Steel Anvil",
+
+  "block.vulcan.forged_steel_crate": "Forged Steel Crate",
+  "block.vulcan.hornblende_bricks": "Hornblende Bricks",
+  "itemGroup.vulcan": "Vulcan"
+}

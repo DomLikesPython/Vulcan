@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vulcan:forged_steel_block"
+    }
+  ],
+  "result":
+  {
+    "item": "vulcan:forged_steel_ingot",
+    "count": 9
+  }
+}

@@ -1,0 +1,8 @@
+{
+	"variants": {
+		"facing=north": { "model": "vulcan:block/forged_steel_anvil"},
+		"facing=east": { "model": "vulcan:block/forged_steel_anvil", "y":  90},
+		"facing=south": { "model": "vulcan:block/forged_steel_anvil", "y":  180},
+		"facing=west": { "model": "vulcan:block/forged_steel_anvil", "y":  270}
+	}
+}

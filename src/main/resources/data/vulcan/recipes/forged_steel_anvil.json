@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "XXX",
+    " V ",
+    "SSS"
+  ],
+  "key":
+  {
+    "X": {
+      "item": "vulcan:forged_steel_block"
+    },
+    "V": {
+      "item": "vulcan:forged_steel_ingot"
+    },
+    "S": {
+      "item": "minecraft:quartz_slab"
+    }
+  },
+  "result":
+  {
+    "item": "vulcan:forged_steel_anvil",
+    "count": 1
+  }
+}

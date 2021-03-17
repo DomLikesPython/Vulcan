@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vulcan:stone_hammer"
+    },
+    {
+      "item": "minecraft:coal"
+    }
+  ],
+  "result":
+  {
+    "item": "vulcan:coal_dust",
+    "count": 1
+  }
+}

@@ -1,0 +1,8 @@
+{
+	"variants": {
+		"facing=north": { "model": "vulcan:block/hearth"},
+		"facing=east": { "model": "vulcan:block/hearth", "y":  90},
+		"facing=south": { "model": "vulcan:block/hearth", "y":  180},
+		"facing=west": { "model": "vulcan:block/hearth", "y":  270}
+	}
+}

@@ -1,0 +1,15 @@
+{
+  "type": "vulcan:crafting_damage_tool",
+  "ingredients": [
+    {
+      "item": "minecraft:coal"
+    }
+  ],
+  "tool" : {
+    "item": "vulcan:stone_hammer"
+  },
+  "result": {
+    "item": "vulcan:coal_dust",
+    "count": 1
+  }
+}

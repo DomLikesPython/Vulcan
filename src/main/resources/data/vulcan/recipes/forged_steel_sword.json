@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " X ",
+    " X ",
+    " S "
+  ],
+  "key":
+  {
+    "X": {
+      "item": "vulcan:forged_steel_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "vulcan:forged_steel_sword",
+    "count": 1
+  }
+}
