@@ -12,5 +12,6 @@ public class ClientEventBusSubscriber {
 
     public static void clientSetup(FMLClientSetupEvent event) {
         ScreenManager.registerFactory(Registries.FORGED_STEEL_ANVIL_CONTAINER_TYPE.get(), ForgedSteelAnvilScreen::new);
+
     }
 }

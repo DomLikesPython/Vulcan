@@ -35,6 +35,7 @@ import javax.annotation.Nullable;
 public class ForgedSteelAnvilTileEntity extends LockableLootTileEntity {
 
     public static final int INVENTORY_SIZE = 1;
+    public static final int MAX_SLOT_SIZE = 64;
     public static final int ENERGY_CAPACITY = Integer.MAX_VALUE;
 
     // For Internal Usage

@@ -8,6 +8,9 @@ import net.minecraft.util.IItemProvider;
 import java.util.function.Supplier;
 
 public enum ModItemTier implements IItemTier {
+    FORGE_HAMMER(2, 1000, 0F, 0F, 0, () -> {
+        return Ingredient.fromItems((IItemProvider) Registries.BASALT_BRICKS.get());
+    }),
     FORGED_STEEL(4, 2000, 11.0F, 4.0F, 16, () -> {
         return Ingredient.fromItems((IItemProvider) Registries.FORGED_STEEL_INGOT.get());
     });

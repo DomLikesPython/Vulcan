@@ -1,22 +1,14 @@
 package com.LogicalDom.vulcan.blocks;
 
-import java.util.stream.Stream;
-import javax.annotation.Nullable;
-
-import com.LogicalDom.vulcan.Vulcan;
-import com.LogicalDom.vulcan.containers.ForgedSteelAnvilContainer;
-import com.LogicalDom.vulcan.util.Registries;
 import com.LogicalDom.vulcan.tileentities.ForgedSteelAnvilTileEntity;
+import com.LogicalDom.vulcan.util.Registries;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.inventory.container.Container;
-import net.minecraft.inventory.container.INamedContainerProvider;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.state.DirectionProperty;
 import net.minecraft.state.StateContainer;
@@ -31,12 +23,13 @@ import net.minecraft.util.math.shapes.IBooleanFunction;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.util.math.shapes.VoxelShapes;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.network.NetworkHooks;
+
+import javax.annotation.Nullable;
+import java.util.stream.Stream;
 
 public class ForgedSteelAnvil extends Block {
     private static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
@@ -179,6 +172,7 @@ public class ForgedSteelAnvil extends Block {
         if (!world.isRemote) {
             TileEntity tileEntity = world.getTileEntity(pos);
             if (tileEntity instanceof ForgedSteelAnvilTileEntity) {
+                /*
                 INamedContainerProvider containerProvider = new INamedContainerProvider() {
                     @Override
                     public ITextComponent getDisplayName() {
@@ -190,11 +184,10 @@ public class ForgedSteelAnvil extends Block {
                         return new ForgedSteelAnvilContainer(i, playerInventory, (ForgedSteelAnvilTileEntity) tileEntity);
                     }
                 };
-                NetworkHooks.openGui((ServerPlayerEntity) player, containerProvider, tileEntity.getPos());
-            } else {
-                throw new IllegalStateException("Our named container provider is missing!");
+                 */
+                NetworkHooks.openGui((ServerPlayerEntity) player, (ForgedSteelAnvilTileEntity) tileEntity, tileEntity.getPos());
             }
         }
-        return ActionResultType.SUCCESS;
+        return super.onBlockActivated(state, world, pos, player, hand, trace);
     }
 }

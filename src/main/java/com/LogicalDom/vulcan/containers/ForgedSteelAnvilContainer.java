@@ -3,6 +3,7 @@ package com.LogicalDom.vulcan.containers;
 import com.LogicalDom.vulcan.util.Registries;
 import com.LogicalDom.vulcan.tileentities.ForgedSteelAnvilTileEntity;
 import com.LogicalDom.vulcan.util.CustomEnergyStorage;
+import net.minecraft.block.RedstoneOreBlock;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.IInventory;
@@ -14,11 +15,11 @@ import net.minecraft.network.PacketBuffer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.IWorldPosCallable;
 import net.minecraft.util.IntReferenceHolder;
-import net.minecraft.util.NonNullList;
 import net.minecraftforge.energy.CapabilityEnergy;
 import net.minecraftforge.energy.IEnergyStorage;
 import net.minecraftforge.items.IItemHandler;
 
+import javax.annotation.Nonnull;
 import java.util.Objects;
 
 
@@ -143,5 +144,6 @@ public class ForgedSteelAnvilContainer extends Container {
             }
         });
     }
+
 
 }

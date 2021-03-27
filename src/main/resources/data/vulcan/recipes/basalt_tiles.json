@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:basalt_bricks"
+    },
+    {
+      "item": "minecraft:basalt_bricks"
+    },
+    {
+      "item": "minecraft:basalt_bricks"
+    },
+    {
+      "item": "minecraft:basalt_bricks"
+    }
+  ],
+  "result":
+  {
+    "item": "vulcan:basalt_tiles",
+    "count": 4
+  }
+}

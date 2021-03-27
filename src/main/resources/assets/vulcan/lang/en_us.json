@@ -21,6 +21,10 @@
   "screen.vulcan.forged_steel_anvil.name": "Forged Steel Anvil",
 
   "block.vulcan.forged_steel_crate": "Forged Steel Crate",
-  "block.vulcan.hornblende_bricks": "Hornblende Bricks",
+  "block.vulcan.basalt_bricks": "Basalt Bricks",
+  "block.vulcan.basalt_tiles": "Basalt Tiles",
+  "block.vulcan.cracked_basalt_bricks": "Cracked Basalt Bricks",
+
+  "item.vulcan.forge_hammer": "Forge Hammer",
   "itemGroup.vulcan": "Vulcan"
 }

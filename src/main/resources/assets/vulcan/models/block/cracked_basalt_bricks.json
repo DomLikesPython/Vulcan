@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "vulcan:blocks/cracked_basalt_bricks"
+  }
+}

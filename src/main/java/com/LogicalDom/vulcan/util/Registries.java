@@ -5,6 +5,7 @@ import com.LogicalDom.vulcan.blocks.*;
 import com.LogicalDom.vulcan.containers.ForgedSteelAnvilContainer;
 import com.LogicalDom.vulcan.enums.ModArmorMaterial;
 import com.LogicalDom.vulcan.enums.ModItemTier;
+import com.LogicalDom.vulcan.items.ForgeHammer;
 import com.LogicalDom.vulcan.items.StoneHammer;
 import com.LogicalDom.vulcan.recipies.DamageToolRecipe;
 import com.LogicalDom.vulcan.tileentities.ForgedSteelAnvilTileEntity;
@@ -29,7 +30,6 @@ public class Registries {
         CONTAINER_TYPES.register(FMLJavaModLoadingContext.get().getModEventBus());
         TILE_ENTITY_TYPES.register(FMLJavaModLoadingContext.get().getModEventBus());
         CUSTOM_CRAFTING_RECIPES.register(FMLJavaModLoadingContext.get().getModEventBus());
-
     }
 
     // Registries
@@ -83,9 +83,24 @@ public class Registries {
         return new BlockItemBase((Block) Registries.HEARTH.get(), (new Item.Properties()).group(Vulcan.TAB));
     });
 
-    public static final RegistryObject<Item> HORNBLENDE_BRICKS_ITEM = ITEMS.register("hornblende_bricks", () -> {
-        return new BlockItemBase((Block) Registries.HORNBLENDE_BRICKS.get(), (new Item.Properties().group(Vulcan.TAB)));
+    public static final RegistryObject<Item> BASALT_BRICKS_ITEM = ITEMS.register("basalt_bricks", () -> {
+        return new BlockItemBase((Block) Registries.BASALT_BRICKS.get(), (new Item.Properties().group(Vulcan.TAB)));
     });
+
+    public static final RegistryObject<Item> BASALT_TILES_ITEM = ITEMS.register("basalt_tiles", () -> {
+        return new BlockItemBase((Block) Registries.BASALT_TILES.get(), (new Item.Properties().group(Vulcan.TAB)));
+    });
+
+    public static final RegistryObject<Item> CRACKED_BASALT_BRICKS_ITEM = ITEMS.register("cracked_basalt_bricks", () -> {
+        return new BlockItemBase((Block) Registries.CRACKED_BASALT_BRICKS.get(), (new Item.Properties().group(Vulcan.TAB)));
+    });
+
+    public static final RegistryObject<Item> FORGE_HAMMER = ITEMS.register("forge_hammer", ForgeHammer::new);
+
+    public static final RegistryObject<Item> HEATING_COIL_ITEM = ITEMS.register("heating_coil", () -> {
+        return new BlockItemBase((Block) Registries.HEATING_COIL.get(), (new Item.Properties().group(Vulcan.TAB)));
+    });
+
     public static final RegistryObject<Item> TEST_ITEM = ITEMS.register("test_item", ItemBase::new);
     public static final RegistryObject<Item> CAKE = ITEMS.register("cake", ItemBase::new);
 
@@ -96,7 +111,11 @@ public class Registries {
 
     public static final RegistryObject<Block> HEARTH = BLOCKS.register("hearth", Hearth::new);
 
-    public static final RegistryObject<Block> HORNBLENDE_BRICKS = BLOCKS.register("hornblende_bricks", HornblendeBricks::new);
+    public static final RegistryObject<Block> BASALT_BRICKS = BLOCKS.register("basalt_bricks", BasaltBricks::new);
+    public static final RegistryObject<Block> BASALT_TILES = BLOCKS.register("basalt_tiles", BasaltTiles::new);
+    public static final RegistryObject<Block> CRACKED_BASALT_BRICKS = BLOCKS.register("cracked_basalt_bricks", CrackedBasaltBricks::new);
+
+    public static final RegistryObject<Block> HEATING_COIL = BLOCKS.register("heating_coil", HeatingCoil::new);
 
     // Container Types
     public static final RegistryObject<ContainerType<ForgedSteelAnvilContainer>> FORGED_STEEL_ANVIL_CONTAINER_TYPE = CONTAINER_TYPES.register("forged_steel_anvil", () -> IForgeContainerType.create(ForgedSteelAnvilContainer::new));

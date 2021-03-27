@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " X ",
+    " SX",
+    "S  "
+  ],
+  "key":
+  {
+    "X": {
+      "item": "vulcan:hornblende_bricks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "vulcan:forge_hammer",
+    "count": 1
+  }
+}
